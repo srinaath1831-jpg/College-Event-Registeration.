@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | CampusConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            🎓 CampusConnect
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Website
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="dashboard.html">
+                Student Dashboard
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main class="admin-page">
+
+    <div class="section-title">
+
+        <span>ADMIN PANEL</span>
+
+        <h1>Event Management</h1>
+
+        <p>
+            Manage events and student registrations.
+        </p>
+
+    </div>
+
+
+    <div class="admin-stats">
+
+        <div class="admin-stat">
+
+            <span>📅</span>
+
+            <div>
+
+                <h2>12</h2>
+
+                <p>Total Events</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="admin-stat">
+
+            <span>👥</span>
+
+            <div>
+
+                <h2 id="adminRegistrations">
+                    0
+                </h2>
+
+                <p>Registrations</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="admin-stat">
+
+            <span>🎓</span>
+
+            <div>
+
+                <h2>856</h2>
+
+                <p>Students</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="admin-stat">
+
+            <span>🏆</span>
+
+            <div>
+
+                <h2>8</h2>
+
+                <p>Clubs</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="admin-panel">
+
+        <div class="panel-header">
+
+            <h2>Event List</h2>
+
+            <button
+                onclick="addEvent()"
+                class="btn"
+            >
+                + Add Event
+            </button>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Event</th>
+
+                        <th>Category</th>
+
+                        <th>Date</th>
+
+                        <th>Registrations</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Hackathon 2026</td>
+
+                        <td>Technical</td>
+
+                        <td>15 Sep 2026</td>
+
+                        <td>72 / 100</td>
+
+                        <td>
+                            <span class="status open">
+                                Open
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button
+                                class="table-btn"
+                                onclick="editEvent('Hackathon 2026')"
+                            >
+                                Edit
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Cultural Fest</td>
+
+                        <td>Cultural</td>
+
+                        <td>25 Sep 2026</td>
+
+                        <td>184 / 300</td>
+
+                        <td>
+                            <span class="status open">
+                                Open
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button
+                                class="table-btn"
+                                onclick="editEvent('Cultural Fest')"
+                            >
+                                Edit
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>AI Workshop</td>
+
+                        <td>Workshop</td>
+
+                        <td>05 Oct 2026</td>
+
+                        <td>56 / 80</td>
+
+                        <td>
+                            <span class="status open">
+                                Open
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button
+                                class="table-btn"
+                                onclick="editEvent('AI Workshop')"
+                            >
+                                Edit
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="admin.js"></script>
+
+</body>
+</html>
