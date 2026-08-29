@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | CampusConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            🎓 CampusConnect
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="about.html">About</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main class="contact-page">
+
+    <div class="section-title">
+
+        <span>GET IN TOUCH</span>
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Have a question? We'd love to hear from you.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-info">
+
+            <h2>Let's Talk 👋</h2>
+
+            <p>
+                Contact the CampusConnect team for
+                event-related questions and support.
+            </p>
+
+
+            <div class="contact-item">
+
+                <span>📧</span>
+
+                <div>
+                    <strong>Email</strong>
+                    <p>events@college.edu</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>📞</span>
+
+                <div>
+                    <strong>Phone</strong>
+                    <p>+91 98765 43210</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>📍</span>
+
+                <div>
+                    <strong>Campus</strong>
+                    <p>College Main Campus</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-form">
+
+            <form onsubmit="sendMessage(event)">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    required
+                >
+
+                <textarea
+                    placeholder="Write your message..."
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script>
+
+function sendMessage(event) {
+
+    event.preventDefault();
+
+    alert(
+        "Message sent successfully! 🎉"
+    );
+
+    event.target.reset();
+
+}
+
+</script>
+
+</body>
+</html>
